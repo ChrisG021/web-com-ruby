@@ -1,0 +1,27 @@
+
+# 1️⃣ Criar a pasta do projeto e entrar nela
+mkdir meu_projeto_ruby
+cd meu_projeto_ruby
+
+# 2️⃣ Inicializar Bundler (cria Gemfile)
+bundle init
+
+# 3️⃣ (Opcional) Adicionar gems no Gemfile
+# Exemplo: RSpec para testes, RuboCop para linting
+echo 'gem "rspec"' >> Gemfile
+echo 'gem "rubocop", require: false' >> Gemfile
+echo 'gem "rufo", require: false' >> Gemfile
+
+# 4️⃣ Instalar as gems do Gemfile
+bundle install
+
+# 5️⃣ Criar arquivo de versão do Ruby
+# Substitua pela versão que você tem instalada
+echo 3.2.2 > .ruby-version
+
+# 6️⃣ Criar script de teste
+echo 'puts "Projeto Ruby funcionando!"' > teste.rb
+
+# 7️⃣ Rodar o script
+ruby teste.rb
+bundle exec ruby teste.rb   # caso use gems do Gemfile

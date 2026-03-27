@@ -145,7 +145,5 @@ class People
       return "Essa pessoa tem #{@years} anos"
   end
 end
-
 p1 = People.new(979000000)
-
 puts p1
